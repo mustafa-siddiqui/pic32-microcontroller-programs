@@ -31,7 +31,7 @@ int main(void) {
     LATA |= 0xF0;
     
     // set RE to be output: b7-b0 = 0
-    TRISE = !0xFF;
+    TRISE = 0xFF00;
     
     // initialize the LCD display
     lcd_display_driver_initialize();
