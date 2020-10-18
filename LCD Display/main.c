@@ -1,6 +1,5 @@
 /** @file   main.c
- *  @brief  Code for Lab2.
- *          This program configures Novatek's Single-Chip 16C X 2L Dot Matrix
+ *  @brief  This program configures Novatek's Single-Chip 16C X 2L Dot Matrix
  *          LCD Display Controller using the PIC32MX795F512L microcontroller
  *          such that it displays a string denoting a student's NetID.
  *  @author Mustafa Siddiqui
