@@ -1,6 +1,5 @@
 /** @file   main.c
- *  @brief  Code for Lab3.
- *          Emulates a digital combination lock by using the push buttons on
+ *  @brief  Emulates a digital combination lock by using the push buttons on
  *          the 16/32 Explorer Board to increment letters on the display. This
  *          process happens with the use of interrupts. If the string on the 
  *          display matches 'MUS', the four LEDs are turned on.
@@ -63,7 +62,7 @@ int main(void) {
     TRISDbits.TRISD13 = 0x1;    // S4
      
     // for LCD Display
-    TRISE = !0xFF;          // set RE to be output: b7-b0 = 0
+    TRISE = 0xFF00;          // set RE to be output: b7-b0 = 0
     TRISDbits.TRISD4 = 0;   // enable
     TRISDbits.TRISD5 = 0;   // RW
     TRISBbits.TRISB15 = 0;  // RS
