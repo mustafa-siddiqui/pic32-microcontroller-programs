@@ -79,7 +79,7 @@ void CN_init(void) {
  */
 void __ISR(_CHANGE_NOTICE_VECTOR, IPL5SOFT) CN_ISR(void) {
     
-    /* precautionary debugging measure */
+    // get current value at pins
     encoderPos.curr_A = PORTGbits.RG6;
     encoderPos.curr_B = PORTGbits.RG7;
     
