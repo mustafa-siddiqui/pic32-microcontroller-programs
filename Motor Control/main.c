@@ -1,5 +1,10 @@
 /** @file   main.c
- *  @brief  Code for Lab 8
+ *  @brief  Program to control the direction of the motor using a simple
+ *          mechanism such that the current angle of the motor shaft is close
+ *          to the target angle (within 7.5 degrees) while the target is set by
+ *          the user by pressing the push buttons SW4 and SW5. The duty cycle 
+ *          of the motor is set by the position of the potentiometer on the
+ *          16/32 Explorer Board.
  *  @author Mustafa Siddiqui
  *  @date   10/30/2020
  */
