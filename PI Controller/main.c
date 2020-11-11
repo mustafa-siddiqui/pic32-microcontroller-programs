@@ -266,7 +266,7 @@ void TMR4_init(void) {
     TMR4 = 0;                   // start at 0
     T4CONbits.ON = 1;           // enable timer 4
     T4CONbits.TCKPS = 0b111;    // or 0x7; pre-scalar set to 256
-    IPC4bits.IC4IP = 2;         // priority = 3
+    IPC4bits.IC4IP = 2;         // priority = 2
     IPC4bits.T4IS = 0;          // sub-priority = 0
     IFS0bits.IC4IF = 0;         // clear status flag
     IEC0bits.T4IE = 1;          // enable interrupt
