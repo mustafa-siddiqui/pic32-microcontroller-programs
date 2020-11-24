@@ -1,5 +1,8 @@
 /** @file   main.c
- *  @brief  Code for Lab10.
+ *  @brief  Program that implements a PI controller to control a DC motor. Target Angle is set
+ *          by receiving a decimal with UART. The target angle is sent by a MATLAB script.
+ *          The program also records the transient response of the motor and then transmits the
+ *          data to MATLAB which is then plotted.
  *  @author Mustafa Siddiqui
  *  @date   11/14/2020
  */
