@@ -1,5 +1,12 @@
 /** @file   main.c
- *  @brief  Code for Lab 12.
+ *  @brief  This code controls the direction and speed of a DC Gearmotor according to the
+ *          joystick position on the Logitech wireless gamepad controller.
+ *          Intended for PIC32MX795F512L microcontroller on the 16/32 Explorer connected
+ *          to a Pololu Dual MC33926 Motor Driver Carrier (H-Bridge circuit) which powers
+ *          a 99:1 Pololu Metal Gearmotor 25Dx54L mm LP 12 V with 49 CPR Encoder.
+ *          The SPI4 module on the PIC32 communicates in slave mode with the SPI0 module
+ *          on a Raspberry Pi 3 Model B (master mode) which has the nano-receiver of the
+ *          wireless gamepad controller plugged into one of its USB 2.0 ports.
  *  @author Mustafa Siddiqui
  *  @date   12/05/2020
  */
