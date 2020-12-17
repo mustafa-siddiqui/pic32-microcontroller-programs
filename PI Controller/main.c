@@ -301,7 +301,7 @@ void __ISR(_TIMER_4_VECTOR, IPL2SOFT) TMR4_ISR(void) {
     }
     
     // set duty cycle equal to control variable
-    OC4RS = pwm;
+    OC4RS = (int)pwm;
     
     // control the rotation of the motor
     if (pwm > 0) {
